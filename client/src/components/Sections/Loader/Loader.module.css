@@ -1,0 +1,76 @@
+
+.ContainerLoader{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    z-index: 12;
+    background-color: rgba(29, 29, 29, 1);
+}
+
+.ContainerCharacters{
+    display: flex;
+    margin-left: -50px;
+    gap: 10px;
+}
+
+.CharacterA{
+    background-image: url("../../../assets/loader/rickAnimationA.png");
+    width: 130px;
+    height: 172px;
+    z-index: 3; 
+    animation: run 1.5s steps(8) infinite,
+                forward2 40s linear infinite;
+}
+
+.CharacterB{
+    background-image: url("../../../assets/loader/rickAnimationB.png");
+    width: 130px;
+    height: 172px;
+    z-index: 3; 
+
+    animation: run 1.5s steps(8) infinite,
+                forward2 40s linear infinite;
+}
+
+.CharacterC{
+    background-image: url("../../../assets/loader/rickAnimationC.png");
+    width: 130px;
+    height: 172px;
+    z-index: 3; 
+    animation: run 1.5s steps(8) infinite,
+                forward2 50s linear infinite;
+}
+
+@keyframes run{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1040px;
+    }
+}
+
+@keyframes forward2{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(400px);
+    }
+}
+
+
+/* Media queries for small-size devices (Mobile) */
+@media screen
+and (max-device-width: 600px) {
+    .ContainerCharacters{
+        transform: scale(.7);
+        margin-top: -15%;
+    }
+    .Title{
+        transform: scale(.6);
+    }
+}

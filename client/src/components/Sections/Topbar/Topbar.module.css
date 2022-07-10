@@ -1,0 +1,57 @@
+.ContainerTopbar{
+    position: fixed;
+    top: 0;
+    right: 3%;
+    background-color: #292929;
+    border: dotted #00FE00;
+    border-width: 0 1.5px 1.5px 1.5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 11;
+    gap: 5px;
+}
+
+.TitleButton{
+    color: rgb(241, 241, 241);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.ImgButton{
+    position: absolute;
+    width: 60%;
+    right: -10%;
+    top: 25%;
+}
+
+.Button{
+    background: #00FE00;
+    border: 1px solid #00FE00;
+    color: #292929;
+    padding: 5px 10px;
+    text-align: center;
+    width: 40%;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: 1.1s ease-in-out;
+}
+
+.Button:hover{
+    background: #292929;
+    border: 1px solid #00FE00;
+    cursor: pointer;
+    color: white;
+    transition: .7s ease-in-out;
+}
+
+
+/* Media queries for small-size devices (Mobile) */
+@media screen
+and (max-device-width: 600px) {
+    .ContainerTopbar{
+        display: none;
+    }
+}

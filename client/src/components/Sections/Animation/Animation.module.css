@@ -1,0 +1,53 @@
+
+.ContainerAnimation{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    bottom: 1%;
+    left: 0;
+    padding: 0 60px;
+}
+.Animation1{
+    width: 9%;
+}
+
+.Animation2{
+    width: 8%;
+}
+
+.Animation3{
+    width: 8%;
+    position: absolute;
+    bottom: 0;
+    animation: jump 4s ease-in infinite;
+}
+
+.Animation4{
+    width: 7%;
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    animation: jump 4s ease-in infinite;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+/* Media queries for small-size devices (Mobile) */
+@media screen
+and (max-device-width: 1500px) {
+    .ContainerAnimation{
+        display: none;
+    }
+}
+
+

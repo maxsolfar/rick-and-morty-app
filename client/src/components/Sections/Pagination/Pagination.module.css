@@ -1,0 +1,88 @@
+.Pagination{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 20px 0 20px 0;
+    z-index: 5;
+
+    /* list-style: none;
+    padding: 10px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 49;
+    background: rgba(255,255,255,.8);
+    padding: 10px 20px;
+    border-radius: 20px; */
+}
+
+.ButtonPaginate{
+    border-style: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .9s ease-in;
+    display: flex;
+    align-items: center;
+}
+
+
+.ButtonPaginate:hover{
+    transition: .5s ease-in;
+    transform: scale(1.05);
+}
+.Numbers, .NumberActive{
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #292929;
+    cursor: pointer;
+    transition: .9s ease-in;
+}
+.Numbers{
+    background-color: #00FE00;
+}
+.Numbers:hover{
+    transition: .5s ease-in;
+    transform: scale(1.05);
+}
+
+.NumberActive {
+    background-color: #5a5959;
+    color: #00FE00;
+}
+
+
+/* Media queries for small-size devices (Mobile) */
+@media screen
+and (max-device-width: 600px) {
+    /* .ButtonPaginateLi{
+        display: none;
+    }
+    .Pagination{
+        grid-gap: 8px;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 10px 0 20px 0;
+        z-index: 5;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .Numbers{
+        padding: 8px 12px;
+        font-size: 1.6rem;
+    }
+}
+

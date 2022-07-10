@@ -1,0 +1,233 @@
+.DetailContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.DetailInfo {
+  width: 60%;
+  height: 70vh;
+  background-color: rgba(29, 29, 29, 0.9);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 7px 6px 5px 0px rgba(29, 29, 29, 0.5);
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  position: relative;
+}
+
+.LeftInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 30%;
+  gap: 10px;
+  z-index: 1;
+}
+
+.Name {
+  font-size: 2.8rem;
+}
+
+.Image {
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 7px 6px 5px 0px rgba(29, 29, 29, 0.5);
+}
+
+.Details {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Species,
+.Origin, .Status, .Gender {
+  padding: 6px 10px;
+  color: #292929;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+}
+.Species {
+  background-color: #212121;
+  border: 1px dotted rgba(0, 254, 0, 1);
+  color: rgba(0, 254, 0, 1);
+}
+
+.Species b, .Gender b, .Status b,
+.Origin b {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Origin {
+  background-color: #212121;
+  border: 1px dotted rgb(255, 233, 29);
+  color: #ffe91d;
+}
+
+.Gender {
+  background-color: #212121;
+  border: 1px dotted #01FBFA;
+  color: #01FBFA;
+  
+}
+
+.Status {
+  background-color: #212121;
+  border: 1px dotted rgb(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255, 1);
+}
+
+.RightInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 60%;
+  gap: 20px;
+  overflow-y: auto;
+  background-color: #292929;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.TitleEpisodes {
+  color: rgba(0, 254, 0, 1);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.Episode {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 254, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.IconEpisode {
+  width: 4%;
+}
+
+.Waves {
+  position: absolute;
+  bottom: -5%;
+}
+
+
+
+.ButtonHome{
+    background-color: #292929;
+    padding: 15px 40px;
+    border-style: none;
+    border: solid rgba(0, 254, 0, 1);
+    border-width: 0px 2px 2px 2px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    color: rgba(0, 254, 0, 1);
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: 1s ease-in-out;
+}
+
+.ButtonHome:hover{
+    background-color: rgba(29, 29, 29, .8);
+    border: solid rgba(255, 255, 255, 1);
+    border-width: 0px 2px 2px 2px;
+    color: white;
+    transition: .7s ease-in-out;
+    cursor: pointer;
+}
+
+.IconHome{
+    position: absolute;
+    border-radius: 50%;
+    width: 40%;
+    top: 12%;
+    left: -20%;
+}
+
+.ButtonDelete{
+  position: absolute;
+  border: 1px solid #ffe91d;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin: 10px;
+  transition: .9s ease-in-out;
+  transform: scale(.9);
+}
+.ButtonDeleteMobile{
+  display: none;
+}
+
+.ButtonDelete:hover{
+  cursor: pointer;
+  transition: .7s ease-in-out;
+  transform: scale(1);
+}
+
+.Deleting{
+  background-color: rgba(0, 254, 0, 1);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media queries for small-size devices (Mobile) */
+@media screen
+and (max-device-width: 600px) {
+    .DetailInfo{
+      width: 90%;
+      flex-direction: column;
+      gap: 20px;
+      padding: 40px 10px;
+      height: auto;
+      margin: 85px 0 20px 0;
+      padding: 40px 10px 60px 10px;
+    }
+    .DetailContainer{
+      height: auto;
+    }
+    .ButtonDeleteMobile{
+      display: block;
+      position: absolute;
+      border: 1px solid #ffe91d;
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 5px;
+      right: 0;
+      left: 0;
+      bottom: 20px;
+      margin: auto;
+      right: 0;
+      z-index: 10;
+      transition: .9s ease-in-out;
+      transform: scale(.9);
+    }
+    .ButtonDelete{
+      display: none;
+    }
+    .Waves{
+      display: none;
+    }
+}

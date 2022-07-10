@@ -1,0 +1,117 @@
+.Card, .ImgCardContainer, .InfoCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card{
+  background-color: rgba(21,21,21,.8);
+  color: white;
+  flex: 0 1 20%;
+  width: 100%;
+  height: 440px;
+  max-width: 300px;
+
+  flex-direction: column;
+  position:relative;
+
+  box-shadow: 7px 6px 5px 0px rgba(29,29,29,0.50);
+}
+
+.Id{
+  position: absolute;
+  top:5px;
+  left: 5px;
+  background-color: #ffe91d;
+  color:#292929;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.ImgCard{
+    width: 100%;
+    height: auto;
+}
+
+.WaveImg{
+  width: 100%;
+  margin-top: -60px;
+}
+
+.InfoCard{
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: #292929;
+    padding-bottom: 20px;
+}
+
+.CardLink{
+  text-decoration: none;
+  transition: .9s ease-in-out;
+  border: 2px solid rgb(219, 218, 218, .8);
+  overflow: hidden;
+  border-radius: 15px;
+  z-index: 10;
+}
+
+.CardLink:hover{
+  transform: scale(1.05);
+  transition: .7s ease-in-out;
+  border: 2px solid rgb(255, 233, 29, .8);
+}
+
+.Name{
+  color: rgb(0, 254, 0);
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 0 10px;
+ 
+}
+.Name::before{
+  content: "";
+  background: url("../../../assets/icon-splash.png") no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+.BottomCard{
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Species, .Origin{
+  padding: 6px 10px;
+  color: #292929;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+}
+.Species{
+  background-color: rgb(255, 255, 255, .9);
+}
+
+.Species b , .Origin b{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Origin{
+  background-color: #212121;
+  border: 1px dotted rgb(255, 233, 29);
+  color: #ffe91d;
+}
+
+.ImgCardContainer{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}

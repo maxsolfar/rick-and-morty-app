@@ -1,0 +1,60 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.ContainerImg{
+    display: flex;
+    align-items: center;
+
+}
+
+.NotFound{
+    width: 100%;
+}
+
+.SubTitle{
+    margin-top: 20px;
+    color: white;
+    font-size: 2.2rem;
+}
+
+.NotFoundCh{
+    width: 70%;
+}
+
+.ButtonHome {
+  background-color: #292929;
+  padding: 20px 40px;
+  border-style: none;
+  border: solid rgba(0, 254, 0, 1);
+  border-width: 0px 2px 2px 2px;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  color: rgba(0, 254, 0, 1);
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: 1s ease-in-out;
+}
+
+.ButtonHome:hover {
+  background-color: rgba(29, 29, 29, 0.8);
+  border: solid rgba(255, 255, 255, 1);
+  border-width: 0px 2px 2px 2px;
+  color: white;
+  transition: 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.IconHome {
+  position: absolute;
+  border-radius: 50%;
+  width: 40%;
+  top: 12%;
+  left: -20%;
+}
