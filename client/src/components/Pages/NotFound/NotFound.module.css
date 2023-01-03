@@ -10,7 +10,7 @@
 .ContainerImg{
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 .NotFound{
@@ -57,4 +57,23 @@
   width: 40%;
   top: 12%;
   left: -20%;
+}
+
+/* Media queries for small-size devices (Mobile) */
+@media screen and (max-device-width: 600px) {
+    
+.NotFound{
+  width: 50%;
+}
+
+.NotFoundCh{
+    width: 30%;
+}
+   
+.SubTitle{
+    font-size: 1.8rem;
+    padding: 0 20px;
+    text-align: center;
+}
+    
 }
